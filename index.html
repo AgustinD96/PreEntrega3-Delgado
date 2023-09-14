@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenido al simulador de carrito de compras</h1>
+    <div id="productos">
+      <!-- Botones de productos se generarán aquí -->
+      <button data-index="0">Cuencos - $3500</button>
+      <button data-index="1">Platos - $1500</button>
+      <button data-index="2">Macetas - $2000</button>
+      <button data-index="3">Tazas Chinas - $2600</button>
+      <button data-index="4">Platos - $1500</button>
+    </div>
+    <h2>Carrito de compras</h2>
+    <ul id="carrito">
+      <!-- Productos seleccionados se mostrarán aquí -->
+    </ul>
+    <p>Total: $<span id="total">0</span></p>
+    <label for="metodoPago">Selecciona el método de pago:</label>
+    <select id="metodoPago">
+      <option value="debito">Débito</option>
+      <option value="credito">Crédito</option>
+    </select>
+    <label for="cuotas">Selecciona el número de cuotas:</label>
+    <select id="cuotas">
+      <option value="1">1 Cuota</option>
+      <option value="3">3 Cuotas</option>
+      <option value="6">6 Cuotas</option>
+      <!-- Agrega más opciones de cuotas -->
+    </select>
+    <label for="tarjeta">Selecciona una tarjeta de pago:</label>
+    <select id="tarjeta">
+      <!-- Las opciones de tarjetas se generan dinámicamente aquí -->
+    </select>
+    <button id="vaciarCarrito">Vaciar Carrito</button>
+    <button id="finalizarCompra">Finalizar Compra</button>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
+
+
